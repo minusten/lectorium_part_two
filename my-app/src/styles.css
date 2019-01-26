@@ -1,0 +1,61 @@
+/* You can add global styles to this file, and also import other style files */
+/* h1 {
+  color: #369;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 250%;
+}
+h2, h3 {
+  color: #444;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: lighter;
+} */
+
+
+body {
+  margin: 2em;
+}
+body, input[text], button {
+  color: #888;
+  font-family: Cambria, Georgia;
+}
+a {
+  cursor: pointer;
+  cursor: hand;
+
+}
+.url {
+  color: red;
+}
+.home {
+
+  height: 100%;
+  padding-right: 10px;
+  display: flex;
+  flex-direction: row;
+}
+.navigate {
+
+  display: flex;
+  flex-direction: row;
+}
+.menu,.menu2,.menu3,.menu4,.menu5 {
+    padding: 10px 30px;
+}
+.rita-img {
+  border-radius: 50%;
+  padding-right: 10px;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+}
+.post {
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+  padding: 10px 10px;
+}
+
+.prophet {
+  opacity: 0.5;
+  padding-bottom: 20px
+}

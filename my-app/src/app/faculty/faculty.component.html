@@ -1,0 +1,100 @@
+<div class = 'title'><h1 style="text-align: center"> В университете Хогвартса вы можете учиться на лучших магических факультетах мира </h1></div>
+<div class = "cont-faculty">
+    <div class = 'gryf'>
+        <h2> Гриффиндор </h2>
+          <img src = 'assets/image/gryf.jpg'/>
+          <button
+            type="button" class="btn btn-outline-secondary" popoverTitle="Перси Уизли:"
+            [autoClose]="'outside'" ngbPopover="Поздравляем! Я — староста Перси Уизли, и я рад приветствовать вас на факультете Гриффиндор. Наш герб — лев, храбрейший из всех живых существ; цвета нашего факультета — алый и золотой, а наша общая комната находится в гриффиндорской башне."
+          >
+            О факультете
+          </button>
+     </div>
+     <div class = 'slyth'>
+       <h2> Слизерин </h2>
+         <img src = 'assets/image/slyth.JPG' width="250px" height="250px"/>
+         <button
+           type="button" class="btn btn-outline-secondary" popoverTitle="Джемма Фарли:"
+           [autoClose]="'outside'" ngbPopover="Вот малоизвестный факт, который другие три факультета не очень-то и учитывают: Мерлин учился на Слизерине. Да, сам Мерлин, самый известный в мире волшебник! Он научился всему, что знал, на нашем факультете! Вы хотите следовать по стопам Мерлина? Или вы лучше будете сидеть за старым столом прославленной выпускницы Пуффендуя, Эглантайн Паффетт, изобретательницы самонамыливающейся тряпки для мытья посуды? Я так не думаю."
+         >
+           О факультете
+         </button>
+      </div>
+      <div class = 'huff'>
+        <h2> Пуффендуй </h2>
+          <img src = 'assets/image/huff.JPG' width="250px" height="250px"/>
+          <button
+            type="button" class="btn btn-outline-secondary" popoverTitle="Кто-то из старост:"
+            [autoClose]="'outside'" ngbPopover="Ученики Пуффендуя надежные и верные. Мы не болтаем по пустякам, но поддержим вас в трудной ситуации. Поскольку наш герб барсук, мы будем защищать себя, наших друзей и семьи от кого бы то ни было. Нас не испугает никто. Наш факультет выпустил наименьшее количество тёмных волшебников."
+          >
+            О факультете
+          </button>
+       </div>
+       <div class = 'raven'>
+         <h2> Когтевран </h2>
+           <img src = 'assets/image/raven.JPG' width="250px" height="250px"/>
+           <button
+             type="button" class="btn btn-outline-secondary" popoverTitle="Роберт Хиллиард:"
+             [autoClose]="'outside'" ngbPopover="Уверен, вы будете хорошо спать. Наши спальни находятся в башенках, отходящих от главной башни. В комнатах стоит по четыре кровати, накрытых шелковыми, пуховыми одеялами небесно-голубого цвета, а свист ветра в окнах очень расслабляет."
+           >
+             О факультете
+           </button>
+        </div>
+ </div>
+
+
+
+  <ngb-tabset #t="ngbTabset">
+  <ngb-tab id="tab-selectbyid1" title="Simple">
+    <ng-template ngbTabContent>
+      <div class = "table">
+        <table class="table table-dark">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Гриффиндор</th>
+            <th scope="col">Слизерин</th>
+            <th scope="col">Пуффендуй</th>
+            <th scope="col">Когтевран</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Студент года</th>
+            <td>Невилл Долгопупс</td>
+            <td>Винсент Крэбб</td>
+            <td>Седрик Диггори</td>
+            <td>Маркус Белби</td>
+          </tr>
+          <tr>
+            <th scope="row">Рейтинг по квиддичу</th>
+            <td>1</td>
+            <td>3</td>
+            <td>2</td>
+            <td>4</td>
+          </tr>
+          <tr>
+            <th scope="row">Очки факультета</th>
+            <td>358</td>
+            <td>345</td>
+            <td>320</td>
+            <td>331</td>
+          </tr>
+        </tbody>
+      </table>
+
+        </div>
+    </ng-template>
+  </ngb-tab>
+  <ngb-tab id="tab-selectbyid2">
+    <ng-template ngbTabTitle><b>Fancy</b> title</ng-template>
+    <ng-template ngbTabContent>Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid.
+      <p>Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table
+      craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl
+      cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit. Keytar helvetica VHS salvia
+      yr, vero magna velit sapiente labore stumptown. Vegan fanny pack odio cillum wes anderson 8-bit, sustainable jean
+      shorts beard ut DIY ethical culpa terry richardson biodiesel. Art party scenester stumptown, tumblr butcher vero
+      sint qui sapiente accusamus tattooed echo park.</p>
+    </ng-template>
+  </ngb-tab>
+</ngb-tabset>

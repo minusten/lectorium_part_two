@@ -5,16 +5,15 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import {Routes, RouterModule} from '@angular/router';
 
 import { AppComponent }   from './app.component';
-import { FacultyComponent }   from './faculty/faculty.component';
-import { NotFoundComponent }   from './not-found.component';
-import { ItemComponent }   from './galery/item.component';
-import { HomeComponent } from './home/home.component';
-import { ChamberComponent } from  './chamber/chamber.component';
+import { FacultyComponent }   from './components/faculty/faculty.component';
+import { NotFoundComponent }   from './components/not-found.component';
+import { ItemComponent }   from './components/galery/item.component';
+import { HomeComponent } from './components/home/home.component';
+import { ChamberComponent } from  './components/chamber/chamber.component';
 
 import { AppBootstrapModule } from './app-bootstrap.module';
 
 
-import { ReactiveFormsModule }    from '@angular/forms';
 
 
 
@@ -32,7 +31,7 @@ const appRoutes: Routes =[
 @NgModule({
 
     imports:      [ BrowserModule, FormsModule, RouterModule.forRoot(appRoutes), AppBootstrapModule,
-                    ReactiveFormsModule, NgbModule, 
+                   NgbModule,
                   ],
     declarations: [
                     AppComponent, HomeComponent,

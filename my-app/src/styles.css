@@ -13,6 +13,7 @@ h2, h3 {
 
 body {
   margin: 2em;
+  background-image: url(assets/image/back4.jpg);
 }
 body, input[text], button {
   color: #888;

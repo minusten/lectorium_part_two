@@ -1,8 +1,12 @@
 <div class ='main-container'>
 <div class = 'tittle'><h2> Добро пожаловать в дневник Тома Реддла! </h2></div>
-<form class= 'menu'>
-<div class="form-group">
-  <button type="button" onclick="alert('sdga')" class="btn btn-outline-dark">Открыть</button>
-</div>
-</form>
+<button (click)="toggle()" id="bt">
+    {{buttonName}}
+</button>
+
+<ng-container *ngIf="show">
+    <div style="margin: 0 auto;text-align: left;">
+      Том Реддл не желает с Вами разговаривать...
+    </div>
+</ng-container>
 </div>
